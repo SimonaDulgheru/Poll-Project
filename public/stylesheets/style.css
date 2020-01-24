@@ -48,9 +48,9 @@
   }
 
   .button {
-  font-size: 14px;
-  font-weight: 100;
-  cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
   }
 
   .create-poll {
@@ -59,20 +59,20 @@
     border: none;
     text-decoration: none;
     color: white;
-    background: linear-gradient(rgb(109, 2, 68),rgb(189, 6, 119),rgb(109, 2, 68));
+    background:rgb(165, 0, 102);
     padding: 0.5em;
     cursor: pointer;
   }
 
   
   .create-poll:hover {
-    background-image: linear-gradient(rgb(83, 0, 53),rgb(165, 0, 102),rgb(83, 0, 53));
+    background-image:rgb(0, 110, 0);
     color: white;
     text-decoration: none;
   }
 
   .button:hover a {
-    background-image: linear-gradient(rgb(68, 0, 42),rgb(209, 4, 130),rgb(68, 0, 42));
+    background: rgb(0, 110, 0);
   }
 
   .fas {
@@ -83,33 +83,49 @@
 
 /* Container questions */
 
-.mobile-wrapper {
-  background: rgb(221, 221, 221);
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-}
-.body-container {
-  width: 90%;
-  height: 450px;
-  margin: 0 auto;
-  border: 1px solid rgb(109, 2, 68);
-  background: rgb(231, 230, 230);
-  -moz-box-shadow: inset 0 0 10px #161616;
- -webkit-box-shadow: inset 0 0 10px #161616;
-  box-shadow: inset 0 0 10px #161616;
-  overflow: auto;
-}
+  .mobile-wrapper {
+    background: rgb(221, 221, 221);
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2em;
+  }
 
-.mobile-pick-question {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-  text-align: center;
-  color: grey;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  font-size: 15px;
-}
+  .body-container {
+    height: 450px;
+    margin: 0 auto;
+    border: 1px solid rgb(109, 2, 68);
+    background: rgb(240, 240, 240);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+    overflow: auto;
+  }
+
+  #search-bar {
+    background: rgb(231, 230, 230);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  #search-for {
+    margin-bottom: 1em;
+  }
+
+  #search-for:hover {
+    background: rgb(0, 110, 0);
+  }
+
+  .mobile-pick-question {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: grey;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 15px;
+  }
 
   .link-question {
     box-sizing: border-box;
@@ -144,30 +160,44 @@
     text-decoration: none;
   }
 
+
 /* New page-Ask question and create Poll */
 
-.mobile-poll {
-  font-size: 20px;
-  text-align: center;
-  font-weight: lighter;
-  padding-top: 1em;
- 
-}
+  .mobile-poll {
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 1em;
+  }
 
-.mobile-form-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 75%;
-  height: auto;
-}
+  .mobile-form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+  }
 
-.poll-question {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.5em;
-  
-}
+  #question-text {
+    background: rgb(231, 230, 230);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+  -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  .answer-text {
+    background: rgb(231, 230, 230);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+  -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  .poll-question {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    
+  }
   input {
     height: 50px;
     width: 100%;
@@ -198,6 +228,7 @@
     color: white;
     border: none;
     padding:0.5em;
+    margin-top: 1em;
     }
 
   .mobile-add-poll {
@@ -208,24 +239,34 @@
     justify-content: flex-end;
   }
 
-  .poll-button {
-    font-size: 15px;
+  #poll-button {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    text-decoration: none;
     cursor: pointer;
+    font-size: 15px;
     border-radius: 15px;
     background:rgb(109, 2, 68) ;
     color: white;
-    border: none;
     padding:0.5em;
-
   }
+
+  #poll-button a {
+    text-decoration: none;
+  }
+
+  #poll-button a:hover {
+    text-decoration: none;
+  }
+
 
 /* Favorite Question Page */
 
-.body-questions {
-  width: 85%;
-  margin: 0 auto;
-  
-}
+  .body-questions {
+    width: 85%;
+    margin: 0 auto;
+  }
 
   .mobile-favorite-question {
     display: block;
@@ -237,7 +278,6 @@
     color: white;
     text-align: center;
     padding: 1em;
-   
   }
 
   .mobile-favorite-answer {
@@ -287,7 +327,6 @@
 
   .copy-button:hover {
     background: rgb(80, 0, 49);
-
   }
 
   .mobile-votes {
@@ -353,9 +392,9 @@
   }
 
   .button {
-  font-size: 14px;
-  font-weight: 100;
-  cursor: pointer;
+    font-size: 14px;
+    font-weight: 100;
+    cursor: pointer;
   }
 
   .create-poll {
@@ -379,31 +418,41 @@
 
   .create-poll:hover a {
     text-decoration: none;
-     color: white;
+    color: white;
   }
 
   .fas {
     margin-left: 0.5em;
   }
 
+
 /* Body */
 
   .wrapper {
-    background: rgb(221, 221, 221);
+    background: rgb(230, 230, 230);
     width: 75%;
     margin: 0 auto;
-
+    padding: 2em;
   }
 
   .body-container-desktop {
-    width: 75%;
     margin: 0 auto;
     border: 1px solid rgb(109, 2, 68);
-    background: rgb(231, 230, 230);
-    -moz-box-shadow: inset 0 0 10px #161616;
-   -webkit-box-shadow: inset 0 0 10px #161616;
-    box-shadow: inset 0 0 10px #161616;
+    background: rgb(240, 240, 240);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
 
+  #search-bar {
+    background: rgb(240, 240, 240);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+    -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  #search-for {
+    margin-bottom: 2em;
   }
 
   .pick-question {
@@ -449,7 +498,9 @@
     text-decoration: none;
   }
 
+
   /* New Page */
+
   .poll {
     text-align: center;
     padding: 1.5em;
@@ -462,13 +513,30 @@
     width: 75%;
     height: auto;
   }
+  
+  #question-text {
+    background: rgb(240, 240, 240);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+   -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  .answer-text {
+    background: rgb(240, 240, 240);
+    -moz-box-shadow: inset 0 0 10px #6b6b6b;
+   -webkit-box-shadow: inset 0 0 10px #6b6b6b;
+    box-shadow: inset 0 0 10px #6b6b6b;
+  }
+
+  #add {
+    margin-top: 1em;
+  }
 
   .answer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
-    /* width: 75%; */
     height: auto;
   }
 
@@ -488,7 +556,27 @@
     height: 20%;
     padding: 1em;
   }
+
+  #poll-button {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 15px;
+    background:rgb(109, 2, 68) ;
+    color: white;
+    padding: 0.5em;
+  }
+
+  #poll-button a {
+    text-decoration: none;
+  }
   
+  #poll-button:hover {
+    background: rgb(0, 110, 0);
+  }
+
   input {
     height: 50px;
     width: 100%;
@@ -520,7 +608,7 @@
   .add:hover {
     background: rgb(0, 110, 0);
   }
-
+  
   .add-poll {
     border: none;
     text-decoration: none;
@@ -529,20 +617,8 @@
     display: flex;
     justify-content: flex-end;
   }
-.copy-button {
-  font-size: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-    background:rgb(109, 2, 68);
-    color: white;
-    border: none;
-    padding:0.5em;
-}
-  /* .copy-button {
-    background: rgb(165, 0, 102);
-  } */
 
-  .poll-button {
+  .copy-button {
     font-size: 15px;
     border-radius: 15px;
     cursor: pointer;
@@ -550,23 +626,9 @@
     color: white;
     border: none;
     padding:0.5em;
-  }
-
-  .poll-button:hover {
-    background: rgb(0, 110, 0);
-  }
-
-  /* .copy-mouse {
-    padding: 10px 25px 10px 25px; 
-        background: rgb(61, 61, 61);
-        border:0px;
-        color: white;
-        font-family: 'Marmelad', sans-serif;
-        font-size: 20px;
-        padding: 10px 25px 10px 25px;
-        border-radius: 20px;
-        cursor: pointer;
-  } */
+}
+  
+  
 
   /* Question Page */
 
