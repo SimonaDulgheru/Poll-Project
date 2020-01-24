@@ -8,8 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getPollBySearch(Search){
         const response = await fetch(`http://localhost:8080/api/polls/search/${Search}`);
         const data = await response.json()
-        return data;
-    }
+            return data;
+    } 
+
     function clearQuestions(){
         if (questions.hasChildNodes){
             while(questions.firstChild){
@@ -38,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     searchFor.addEventListener(`click`, (event) =>{
         clearQuestions()
         event.preventDefault();
+        if (searchBar.value === "" ) {
+            alert ("Please insert something to find your question!")
+        }
         getPollBySearch(searchBar.value)
             .then(data => {
                 data.forEach(poll => {
