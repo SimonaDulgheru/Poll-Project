@@ -30,6 +30,9 @@
     background-color: rgb(109, 2, 68);
   }
   
+  .poll-logo {
+    width: 8.5em;
+  }
   .logo{
     display: block;
   }
@@ -372,6 +375,10 @@
     font-size: 15px;
     color: white;
     background-color: rgb(109, 2, 68);
+  }
+
+  .desktop-poll-logo {
+    width: 9em;
   }
 
   .logo{

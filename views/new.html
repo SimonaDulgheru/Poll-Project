@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="stylesheets/style.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="img/Logo.jpg"/>
+    <link href="stylesheets/style.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/b448d7d57d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap"rel="stylesheet"/>
     <title>New Poll</title>
@@ -13,7 +14,7 @@
     <div class="nav-container">
         <nav class="navbar navbar-default">
           <div class="navbar-header">
-            <h1 class="logo"><a href="/">Poll App</a></h1>
+            <a href="/"><img class = "poll-logo desktop-poll-logo" src = "img/Logo.jpg" alt = "Poll Logo"></a>
           </div>
           <div class="button button-desktop">
             <a href="/new"><button class = "create-poll" type="submit">Create your own Poll<span class="fas fa-arrow-right"></span></button></a>
@@ -38,9 +39,6 @@
           <button class = "add" id = "add" type="submit">Add answer<span class= "fas fa-plus-circle"></span></button>
         </form>
       </div>
-      <!-- <div class="add-members mobile-add-members">
-        <button class = "copy-button" onclick="">Invite members to vote<span class= "fas fa-plus-circle"></span></button>
-      </div> -->
       <div class="add-poll mobile-add-poll poll-button ">
         <a href="/questions"><button id = "poll-button" type="submit">Create Poll<span class= "fas fa-arrow-right"></span></button></a>
       </div>
