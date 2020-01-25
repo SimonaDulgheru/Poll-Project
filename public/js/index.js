@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     async function getAllPolls(){
-        const response = await fetch(`http://localhost:8080/api/polls`);
+        const response = await fetch(`/api/polls`);
         const data = await response.json()
         return data;
     }
     async function getPollBySearch(Search){
-        const response = await fetch(`http://localhost:8080/api/polls/search/${Search}`);
+        const response = await fetch(`/api/polls/search/${Search}`);
         const data = await response.json()
             return data;
     } 
