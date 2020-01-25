@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     async function getPollById(id){
-        const response = await fetch(`0/api/polls/${id}`);
+        const response = await fetch(`/api/polls/${id}`);
         const data = await response.json()
         return data;
     }
