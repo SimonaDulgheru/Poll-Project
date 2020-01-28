@@ -27,6 +27,9 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, `../views/answers/${req.params.id}`));
   });
 
+  /* I'm not sure that these next two routes are necessary. The '/' route actually means that if someone
+  presses enter on the question, it directs them to a page with the json returned.  Html routes files
+  should only have GET routes in it also, any POSTing should be done via an api route */
   app.post("/", function(req, res) {
     // console.log(req.params.id);
     const homePage = req.body;
