@@ -39,7 +39,9 @@
 
 - Follows MVC paradigm
 
+# Deployed on Heroku 
 
+## [Live Preview](http://stark-plateau-24544.herokuapp.com/)
 
 
 
