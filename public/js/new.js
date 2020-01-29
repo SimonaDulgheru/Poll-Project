@@ -40,5 +40,10 @@ createPoll.addEventListener(`click`, (event)=>{
     answerText.forEach(answer =>{
         answersForQuestion.push(answer.value)
     });
-    postNewQuestion( questionText.value, answersForQuestion );
+    if (questionText.value === "") {
+        alert("Please insert a question!")
+    }
+    else {
+        postNewQuestion( questionText.value, answersForQuestion );
+    }
 });
