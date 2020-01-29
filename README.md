@@ -41,7 +41,7 @@
 
 # Deployed on Heroku 
 
-## [Live Preview](http://stark-plateau-24544.herokuapp.com/)
+## [Live Preview](http://stark-plateau-24544.herokuapp.com/new)
 
 
 
