@@ -3,17 +3,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     async function getPollById(Id){
-        const response = await fetch(`http://localhost:8080/api/polls/${Id}`);
+        const response = await fetch(`http://localhost:8080/api/polls/${Id}`); /* use relative path */
         const data = await response.json()
         return data;
     }
     async function getAnswersById(Id){
-        const response = await fetch(`http://localhost:8080/api/answers/${Id}`);
+        const response = await fetch(`http://localhost:8080/api/answers/${Id}`);/* use relative path */
         const data = await response.json()
         return data;
     }
     async function postNewVote(answer_id , unique_id) {
-        await fetch('http://localhost:8080/api/votes/new', {
+        await fetch('http://localhost:8080/api/votes/new', {/* use relative path */
           method: 'POST',
           mode: 'cors',
           cache: 'no-cache',

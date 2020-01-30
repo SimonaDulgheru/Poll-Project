@@ -1,3 +1,9 @@
+/* The CSS looks really nice guys. One comment I have would be that you have a lot of duplicate 
+styles in here. If you have a look at https://css-tricks.com/css-media-queries/ you can see that
+you can apply extra or change styles on already styled components. That means you don't need to
+repeat styling that you are not changing for different @media queries.
+*/
+
 * {
   margin: 0;
   padding: 0;

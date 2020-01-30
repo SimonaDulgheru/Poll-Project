@@ -5,7 +5,7 @@ const questionText = document.querySelector(`#question-text`);
 const answersForQuestion =[];
 
 async function postNewQuestion(question , answers) {
-    await fetch('http://localhost:8080/api/polls/new', {
+    await fetch('http://localhost:8080/api/polls/new', {/* It is better to use a relative paths (which you have done now anyway)  */
       method: 'POST',
       mode: 'cors',
       cache: 'no-cache',
