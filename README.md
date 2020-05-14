@@ -24,7 +24,7 @@
 
 -   Creates a live chart with the votes
 
-![PollApp](https://user-images.githubusercontent.com/48987979/81668240-4aacab00-943c-11ea-98ce-df9a09c712fd.JPG)
+![Poll App](https://user-images.githubusercontent.com/48987979/81937841-07913a00-95ec-11ea-8910-122b0e0851d7.jpg)
 
 ## Technologies used
 
